@@ -1,4 +1,4 @@
-import 'package:custom_paint_playground/line_painter_screen.dart';
+import 'package:custom_paint_playground/painters/line_painter_screen.dart';
 import 'package:flutter/material.dart';
 
 class RectPainterScreen extends StatefulWidget {

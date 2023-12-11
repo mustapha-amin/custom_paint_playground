@@ -1,7 +1,9 @@
-import 'package:custom_paint_playground/line_painter_screen.dart';
-import 'package:custom_paint_playground/rect_painter.dart';
-import 'package:custom_paint_playground/rounded_rect.dart';
+import 'package:custom_paint_playground/painters/circle_painter_screen.dart';
+import 'package:custom_paint_playground/painters/line_painter_screen.dart';
+import 'package:custom_paint_playground/painters/rounded_rect.dart';
 import 'package:flutter/material.dart';
+
+import 'painters/rect_painter.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -16,8 +18,9 @@ class _HomeState extends State<Home> {
 
   List<Widget> screens = [
     const LinePainterScreen(),
+    const RectPainterScreen(),
     const RRectPainterScreen(),
-    const RRectPainterScreen(),
+    const CirclePainterScreen(),
   ];
 
   @override
