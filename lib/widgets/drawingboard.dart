@@ -13,7 +13,10 @@ class DrawingBoard extends StatelessWidget {
       child: Container(
         width: context.screenWidth * .8,
         height: context.screenWidth * .8,
-        color: Colors.white,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: Transform.rotate(
           angle: pi / 4,
           child: child,
