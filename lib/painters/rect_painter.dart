@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:custom_paint_playground/painters/line_painter_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +18,11 @@ class _RectPainterScreenState extends State<RectPainterScreen> {
         width: context.screenWidth * .8,
         height: context.screenWidth * .8,
         color: Colors.white,
-        child: CustomPaint(
-          foregroundPainter: RectanglePainter(),
+        child: Transform.rotate(
+          angle: pi / 4,
+          child: CustomPaint(
+            foregroundPainter: RectanglePainter(),
+          ),
         ),
       ),
     );
