@@ -1,14 +1,14 @@
 import 'package:custom_paint_playground/line_painter_screen.dart';
 import 'package:flutter/material.dart';
 
-class RectPainter extends StatefulWidget {
-  const RectPainter({super.key});
+class RectPainterScreen extends StatefulWidget {
+  const RectPainterScreen({super.key});
 
   @override
-  State<RectPainter> createState() => _RectPainterState();
+  State<RectPainterScreen> createState() => _RectPainterScreenState();
 }
 
-class _RectPainterState extends State<RectPainter> {
+class _RectPainterScreenState extends State<RectPainterScreen> {
   @override
   Widget build(BuildContext context) {
     return Center(

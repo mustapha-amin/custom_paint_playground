@@ -16,8 +16,8 @@ class _HomeState extends State<Home> {
 
   List<Widget> screens = [
     const LinePainterScreen(),
-    const RectPainter(),
-    const RRectPainter(),
+    const RRectPainterScreen(),
+    const RRectPainterScreen(),
   ];
 
   @override
