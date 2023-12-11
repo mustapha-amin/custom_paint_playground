@@ -1,3 +1,4 @@
+import 'package:custom_paint_playground/widgets/drawingboard.dart';
 import 'package:flutter/material.dart';
 
 class LinePainterScreen extends StatefulWidget {
@@ -10,14 +11,9 @@ class LinePainterScreen extends StatefulWidget {
 class _LinePainterScreenState extends State<LinePainterScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: context.screenWidth * .8,
-        height: context.screenWidth * .8,
-        color: Colors.white,
-        child: CustomPaint(
-          foregroundPainter: LinePainter(),
-        ),
+    return DrawingBoard(
+      child: CustomPaint(
+        foregroundPainter: LinePainter(),
       ),
     );
   }

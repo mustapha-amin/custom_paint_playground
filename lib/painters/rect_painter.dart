@@ -1,6 +1,5 @@
 import 'dart:math';
-
-import 'package:custom_paint_playground/painters/line_painter_screen.dart';
+import 'package:custom_paint_playground/widgets/drawingboard.dart';
 import 'package:flutter/material.dart';
 
 class RectPainterScreen extends StatefulWidget {
@@ -13,16 +12,11 @@ class RectPainterScreen extends StatefulWidget {
 class _RectPainterScreenState extends State<RectPainterScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        width: context.screenWidth * .8,
-        height: context.screenWidth * .8,
-        color: Colors.white,
-        child: Transform.rotate(
-          angle: pi / 4,
-          child: CustomPaint(
-            foregroundPainter: RectanglePainter(),
-          ),
+    return DrawingBoard(
+      child: Transform.rotate(
+        angle: pi / 4,
+        child: CustomPaint(
+          foregroundPainter: RectanglePainter(),
         ),
       ),
     );

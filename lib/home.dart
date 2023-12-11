@@ -36,6 +36,7 @@ class _HomeState extends State<Home> {
         title: switch (currentIndex) {
           1 => Text("Rectangle painter"),
           2 => Text("RRect painter"),
+          3 => Text("Circle painter"),
           _ => Text("Line painter"),
         },
       ),
