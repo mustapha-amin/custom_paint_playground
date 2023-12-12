@@ -1,7 +1,5 @@
-import 'dart:math';
-
-import 'package:custom_paint_playground/painters/line_painter_screen.dart';
 import 'package:flutter/material.dart';
+import '../helpers.dart';
 
 class DrawingBoard extends StatelessWidget {
   Widget? child;
@@ -17,10 +15,7 @@ class DrawingBoard extends StatelessWidget {
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
         ),
-        child: Transform.rotate(
-          angle: pi / 4,
-          child: child,
-        ),
+        child: child,
       ),
     );
   }

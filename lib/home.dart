@@ -1,6 +1,7 @@
 import 'package:custom_paint_playground/painters/circle_painter_screen.dart';
 import 'package:custom_paint_playground/painters/line_painter_screen.dart';
 import 'package:custom_paint_playground/painters/rounded_rect.dart';
+import 'package:custom_paint_playground/painters/triangle_painter.dart';
 import 'package:flutter/material.dart';
 
 import 'painters/rect_painter.dart';
@@ -21,6 +22,7 @@ class _HomeState extends State<Home> {
     const RectPainterScreen(),
     const RRectPainterScreen(),
     const CirclePainterScreen(),
+    const TrianglePainterScreen(),
   ];
 
   @override
@@ -34,10 +36,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: switch (currentIndex) {
-          1 => Text("Rectangle painter"),
-          2 => Text("RRect painter"),
-          3 => Text("Circle painter"),
-          _ => Text("Line painter"),
+          1 => const Text("Rectangle painter"),
+          2 => const Text("RRect painter"),
+          3 => const Text("Circle painter"),
+          4 => const Text("Triangles painter"),
+          _ => const Text("Line painter"),
         },
       ),
       body: Column(
@@ -62,8 +65,8 @@ class _HomeState extends State<Home> {
                 (screen) => AnimatedContainer(
                   duration: const Duration(milliseconds: 500),
                   margin: const EdgeInsets.all(5),
-                  width: 10,
-                  height: 10,
+                  width: screens[currentIndex] == screen ? 13 : 10,
+                  height: screens[currentIndex] == screen ? 13 : 10,
                   decoration: BoxDecoration(
                       color: screens[currentIndex] == screen
                           ? Colors.grey

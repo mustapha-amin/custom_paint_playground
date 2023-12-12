@@ -1,6 +1,4 @@
 import 'dart:math';
-
-import 'package:custom_paint_playground/painters/line_painter_screen.dart';
 import 'package:custom_paint_playground/widgets/drawingboard.dart';
 import 'package:flutter/material.dart';
 
