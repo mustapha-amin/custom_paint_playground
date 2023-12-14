@@ -1,3 +1,4 @@
+import 'package:custom_paint_playground/painters/arc_painter.dart';
 import 'package:custom_paint_playground/painters/circle_painter_screen.dart';
 import 'package:custom_paint_playground/painters/line_painter_screen.dart';
 import 'package:custom_paint_playground/painters/rounded_rect.dart';
@@ -23,6 +24,7 @@ class _HomeState extends State<Home> {
     const RRectPainterScreen(),
     const CirclePainterScreen(),
     const TrianglePainterScreen(),
+    const ArcPainterScreen(),
   ];
 
   @override
@@ -40,6 +42,7 @@ class _HomeState extends State<Home> {
           2 => const Text("RRect painter"),
           3 => const Text("Circle painter"),
           4 => const Text("Triangles painter"),
+          5 => const Text("Arc painter"),
           _ => const Text("Line painter"),
         },
       ),
